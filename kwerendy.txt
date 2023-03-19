@@ -1,0 +1,13 @@
+1. SELECT 
+	bmi.informacja,
+	bmi.wart_min, 
+	bmi.wart_max FROM BMI;
+2. INSERT INTO wynik 
+		(wynik.id, wynik.bmi_id, wynik.data_pomiaru, wynik.wynik) VALUES 
+		(NULL,3,2020-05-10,27);
+3. SELECT wynik.wynik, 
+	  wynik.data_pomiaru,
+	  bmi.informacja 
+	  FROM  wynik,
+		bmi where wynik.bmi_id = bmi.id;
+4. SELECT bmi.wart_min, bmi.wart_max FROM BMI WHERE informacja = "nadwaga";
